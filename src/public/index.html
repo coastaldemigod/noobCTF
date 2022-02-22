@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noobCTF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-page">
+        <!-- to be implemented -->
+        <!-- a slider between the left and right sides. -->
+        <!-- auto scroll when overflow in terminal to always show terminal prompt -->
+        <div class="split left">
+            <div class="heading">
+                noobCTF
+            </div>
+            <div class="description">
+                An online platform to host and compete in CTFs.<br><br>
+                All functionalities can be accessed from the command line.
+            </div>
+            <div>
+                <button class="host-button">Host a CTF</button>
+            </div>
+            <div class="footer">
+                made with love and javascript<br>
+                by Shivansh (linkedin,instagram,github)
+            </div>
+        </div>
+        <div class="split right">
+            <textarea id="terminal" autocomplete="off" spellcheck="false"></textarea>
+        </div>
+    </div>
+</body>
+<script src="terminal.js"></script>
+<script src="app.js" type="module"></script>
+</html>
