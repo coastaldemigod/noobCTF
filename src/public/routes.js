@@ -210,4 +210,9 @@ async function hack(com) {
     }
 }
 
-export { login, register, doLoginRegister, ls, cd, cat, hack };
+function help(com){
+    write(allCommandsHelp)
+    nextLine();
+}
+
+export { login, register, doLoginRegister, ls, cd, cat, hack , help};

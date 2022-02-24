@@ -1,5 +1,5 @@
 import { makeRequest } from "./request.js";
-import { login, register, doLoginRegister, ls, cd, cat, hack } from "./routes.js";
+import { login, register, doLoginRegister, ls, cd, cat, hack, help } from "./routes.js";
 
 function sanitize(command) {
     let arr = command.split(/ +/);
@@ -35,6 +35,9 @@ async function processCommand(command) {
     }
     else if (com[0] == 'hack') {
         hack(com);
+    }
+    else if (com[0]=='help'){
+        help(com);
     }
     else if(com[0]=='cls' || com[0]=='clear'){
         currentText=bash;
