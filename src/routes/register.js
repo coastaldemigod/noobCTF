@@ -33,7 +33,7 @@ async function register(req, res, next) {
         'username':user.username,
         'email':user.email
       }
-      return res.status(201).cookie('access_token', token).json(user);
+      return res.status(201).cookie('access_token', token,{httpOnly: true}).json(user);
     }
     catch (err) {
       console.log(err);

@@ -24,7 +24,7 @@ async function login(req,res,next){
               'username':user.username,
               'email':user.email
             }
-          return res.status(200).cookie('access_token', token).json(user);
+          return res.status(200).cookie('access_token', token,{httpOnly: true}).json(user);
         }
         else
           return res.status(400).json("Invalid Credentials");

@@ -56,6 +56,11 @@ module.exports = app;
 // and also formats non json objects like null and undefined
 // https://stackoverflow.com/questions/19041837/difference-between-res-send-and-res-json-in-express-js
 
+// Reference 
+// Handling JWT on client using cookies
+// https://mannharleen.github.io/2020-03-19-handling-jwt-securely-part-1/
+
+
 /*
 POST
 /login
