@@ -210,9 +210,22 @@ async function hack(com) {
     }
 }
 
+async function points(com){
+    let {status,data} = await makeRequest(`api/contest/${contestID}/points`, 'GET');
+    if(status==200)
+    {
+        write(`Your total points in this contest are ${data.pts}`)
+    }
+    else
+    {
+        write("Not logged in");
+    }
+    nextLine();
+}
+
 function help(com){
     write(allCommandsHelp)
     nextLine();
 }
 
-export { login, register, doLoginRegister, ls, cd, cat, hack , help};
+export { login, register, doLoginRegister, ls, cd, cat, hack , points, help};
