@@ -1,6 +1,9 @@
 ## noobCTF
 ### A platform to host CTFs, a CLI-based, retro themed CTF hosting platform.
 
+[![IMAGE ALT TEXT HERE](https://github.com/coastaldemigod/noobCTF/blob/main/screenshot.jpeg)](https://youtu.be/1vJbAUGrO-M)
+
+
 ### How to run
 
 Go to src folder
